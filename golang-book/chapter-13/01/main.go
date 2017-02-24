@@ -29,4 +29,19 @@ func main() {
 	//join strings
 	fmt.Println(strings.Join([]string{"nirmal", "vatsyayan"}, "-"))
 
+	//repeat string
+	fmt.Println(strings.Repeat("nirmal ", 5))
+
+	//replace string
+	fmt.Println(strings.Replace("aaaaa", "a", "b", 2))
+
+	//split string
+	fmt.Println(strings.Split("nirmal-vatsyayan", "-"))
+
+	//lower
+	fmt.Println(strings.ToLower("NIRMAL"))
+
+	//upper
+	fmt.Println(strings.ToUpper("nirmal"))
+
 }
