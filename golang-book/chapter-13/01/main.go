@@ -44,4 +44,15 @@ func main() {
 	//upper
 	fmt.Println(strings.ToUpper("nirmal"))
 
+	//string to byte
+
+	arr := []byte("nirmal")
+	fmt.Println(arr)
+
+	//byte to string
+	str := string([]byte{'n', 'i', 'r', 'm', 'a', 'l'})
+	fmt.Println(str)
+
+	fmt.Println(string([]byte{110, 105, 114, 109, 97, 108}))
+
 }
