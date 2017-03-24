@@ -1,0 +1,14 @@
+1) go run filename.go
+
+2) go build
+
+   if you run go build in the folder where you have main function
+   it will build an executable for you
+
+3) go clean
+
+   it will clean all data created by go build
+
+4) go install
+
+   it will get you the executable in bin folder of your workspace

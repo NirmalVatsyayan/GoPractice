@@ -23,13 +23,19 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func getAllArticles(w http.ResponseWriter, r *http.Request) {
-	articles := Articles{
-		Article{Title: "How good is go??", Description: "This article covers aspects of go programming language !!", Slug: "how-good-is-go"},
-		Article{Title: "How good is go??", Description: "This article covers aspects of go programming language !!", Slug: "how-good-is-go"},
+	if r.Method == "GET" {
+		articles := Articles{
+			Article{Title: "How good is go??", Description: "This article covers aspects of go programming language !!", Slug: "how-good-is-go"},
+			Article{Title: "How good is go??", Description: "This article covers aspects of go programming language !!", Slug: "how-good-is-go"},
+		}
+
+		fmt.Println("Endpoint : getAllArticles")
+		json.NewEncoder(w).Encode(articles)
+
+	} else {
+		http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
 	}
 
-	fmt.Println("Endpoint : getAllArticles")
-	json.NewEncoder(w).Encode(articles)
 }
 
 func getArticle(w http.ResponseWriter, r *http.Request) {
