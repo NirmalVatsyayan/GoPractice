@@ -1,0 +1,15 @@
+Install go in your system.
+
+Set GOPATH and PATH in system.
+If using ATOM & Ubuntu
+
+~/.profile: If you set them here, $GOPATH will be set in Atom when you launch Atom for the first time from the launcher in the toolbar
+~/.bashrc If you set them here, $GOPATH will be set in Atom when you launch Atom for the first time from the terminal
+Thus, to ensure GOPATH and PATH are set correctly regardless of how you launch Atom, you should put the following (or similar) in both ~/.profile and ~/.bashrc:
+
+export GOPATH=$HOME/work
+export PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
+
+Packages of Atom:
+     go-plus
+     platformio-ide-terminal
