@@ -12,3 +12,6 @@
 4) go install
 
    it will get you the executable in bin folder of your workspace
+
+
+openssl sha1 go1.7.3.windows-amd64.msi
