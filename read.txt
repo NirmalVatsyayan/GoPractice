@@ -15,3 +15,23 @@
 
 
 openssl sha1 go1.7.3.windows-amd64.msi
+
+set GOROOT and GOPATH in windows system environment variables
+
+GOROOT points towards the root location where go have been installed:
+    C:\Go in windows (default location of installation)
+
+GOPATH points towards your workspace:
+   E:\Go_workspace
+
+   workspace (folder) must have 3 folders inside.
+      - src
+      - bin
+      - pkg
+
+   inside src.
+     create folder github.com
+   inside github.com
+     create folder with your git username
+
+   check out your work repository inside it and start coding and pushing.
