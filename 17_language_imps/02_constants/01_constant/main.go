@@ -13,3 +13,4 @@ func main() {
 }
 
 // a CONSTANT is a simple unchanging value
+//https://blog.golang.org/constants

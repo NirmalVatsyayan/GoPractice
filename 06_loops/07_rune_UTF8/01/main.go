@@ -9,6 +9,11 @@ func main() {
 	foo := "a"
 	fmt.Println(foo)
 	fmt.Printf("%T \n", foo)
+
+	zoo := 'a'
+	fmt.Printf("%T \n", zoo)
+	fmt.Printf("%T \n", rune(zoo))
+
 }
 
 /*
