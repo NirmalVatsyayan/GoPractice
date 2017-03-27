@@ -8,7 +8,7 @@ type customer struct {
 }
 
 func main() {
-	c1 := customer{"Todd", 44}
+	c1 := customer{"Nirmal", 44}
 	fmt.Println(&c1.name) // 0x8201e4120
 
 	changeMe(&c1)
@@ -18,7 +18,7 @@ func main() {
 }
 
 func changeMe(z *customer) {
-	fmt.Println(z)       // &{Todd 44}
+	fmt.Println(z)       // &{Nirmal 44}
 	fmt.Println(&z.name) // 0x8201e4120
 	z.name = "Rocky"
 	fmt.Println(z)       // &{Rocky 44}

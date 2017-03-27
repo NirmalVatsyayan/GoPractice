@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	m := make(map[string]int)
 	changeMe(m)
-	fmt.Println(m["Todd"]) // 44
+	fmt.Println(m["Nirmal"]) // 44
 }
 
 func changeMe(z map[string]int) {
