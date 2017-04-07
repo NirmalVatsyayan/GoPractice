@@ -50,5 +50,5 @@ builds/**/images/*
 *.pem
 *.xxjson
 
-.rsa
-.pub
+*.rsa
+*.pub

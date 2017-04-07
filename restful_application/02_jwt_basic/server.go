@@ -1,5 +1,6 @@
 package main
 
+// code taken from http://www.giantflyingsaucer.com/blog/?p=5994
 //  Generate RSA signing files via shell (adjust as needed):
 //
 //  $ openssl genrsa -out app.rsa 1024
