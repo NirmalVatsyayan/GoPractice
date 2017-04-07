@@ -10,4 +10,4 @@ func add(left, right int) int {
 func main() {
 }
 
-// run go build -buildmode=c-shared -o libadd.so libadd.go
+// run go build -buildmode=c-shared -o libadd.so main.go
