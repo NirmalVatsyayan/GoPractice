@@ -49,3 +49,6 @@ builds/**/images/*
 # security / ssl
 *.pem
 *.xxjson
+
+.rsa
+.pub
