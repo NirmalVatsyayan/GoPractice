@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	s := make([]string, 3)
-	fmt.Println("len - ", len(s), " cap - ", cap(s))
+	fmt.Println("len - ", len(s), " capacity - ", cap(s))
 
 	s[0] = "n"
 	s[1] = "v"
